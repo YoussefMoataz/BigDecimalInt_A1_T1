@@ -32,8 +32,9 @@ int main() {
         cout << "no" << endl;
     }
 
-    BigDecimalInt bI7 = bI1 + bI5;
-    cout << bI7;
+    BigDecimalInt bI7 = bI4 + bI9;
+    cout << bI7; // 0
+    cout << bI1 + bI4;
 
     return 0;
 }
