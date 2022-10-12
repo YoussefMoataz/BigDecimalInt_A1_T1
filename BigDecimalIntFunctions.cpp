@@ -517,6 +517,11 @@ int BigDecimalInt::sign() {
 // Youssef
 ostream &operator<<(ostream &out, BigDecimalInt b) {
 
+    if (b.size() == 0){
+        out << "0";
+        return out;
+    }
+
     if (b.sign() == 1) {
 
         for (int i = 1; i < b.size(); ++i) {

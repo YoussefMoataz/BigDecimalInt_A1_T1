@@ -34,6 +34,10 @@ int main() {
 
     BigDecimalInt bI7 = bI4 + bI9;
     cout << bI7 << endl; // 0
+    cout << bI1 - bI8 << endl;
+    cout << bI3 + bI5 << endl;
+    cout << bI5 + bI3 << endl;
+    cout << bI5 - bI3 << endl;
     cout << bI1 + bI4 << endl;
 
     return 0;
