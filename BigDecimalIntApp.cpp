@@ -39,6 +39,7 @@ int main() {
     cout << bI5 + bI3 << endl;
     cout << bI5 - bI3 << endl;
     cout << bI1 + bI4 << endl;
+    cout << "bI9 - bI3 = " << bI3 - bI9 << endl; // not working
 
     return 0;
 }
