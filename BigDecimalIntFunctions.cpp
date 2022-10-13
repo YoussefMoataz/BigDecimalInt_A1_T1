@@ -517,7 +517,14 @@ int BigDecimalInt::sign() {
 // Youssef
 ostream &operator<<(ostream &out, BigDecimalInt b) {
 
+    // handles no string after plus, minus = 0
     if (b.size() == 0){
+        out << "0";
+        return out;
+    }
+
+    // handles negative sign only after plus, minus = 0
+    if (b.size() == 1 && b.decimalStr[0] == '-'){
         out << "0";
         return out;
     }
